@@ -192,7 +192,7 @@ INFO | 2018-04-17 05:41:43,572 | deepstate | Input: 00 00 00 00 00 00 00 00 00 0
 
 INFO | 2018-04-17 05:41:43,573 | deepstate | Saving input to out/Distributive.cpp/Distributive_MultiplicationIsDistributive/8dd6bb7329a71449b0a1b292b5999164.pass
 ```
-As you can see, our test has passed, and our functions do indeed follow the distributive property!
+As you can see, our test has passed, and our functions indeed follow the distributive property!
 
 Now, to provide an example of a failing test case I have changed the function that tests the distributive property to:
 ```
