@@ -62,7 +62,7 @@ add_subdirectory(executable)
 ```
 * * * * *
 
-Suppose you have a header file that exports two functions: add and multiply. You want to test these functions-- specifically that they always distribute. More specifically, add(multiply(x, y), (multiply(x,z)) == multiply(x,add(y,z)).
+Suppose you have a header file that exports two functions: add and multiply. You want to test these functions-- specifically that they always distribute. Namely, add(multiply(x, y), (multiply(x,z)) == multiply(x,add(y,z)).
 
 For reference: the header file "functions.h" provides the following add/multiply functions and will reside in /executable :
 ```
@@ -94,7 +94,7 @@ ForAll<int, int, int>([] (int x, int y, int z) {
 
 ASSERT_EQ(multiply(x, add(y, z)), add(multiply(x, y), multiply(x, z)))
 
-   &lt;&lt; &quot;Multiplication of signed integers must distribute.&quot;;
+   << "Multiplication of signed integers must distribute.";
 });
 
 }
@@ -121,10 +121,10 @@ DeepState uses the same binary comparison methods as Google Test:
 |---------------------------|---------------------------|-----------------|
 | ASSERT_EQ ( val1, val2 ); | EXPECT_EQ ( val1, val2 ); | val1 == val2    |
 | ASSERT_NE ( val1, val2 ); | EXPECT_NE ( val1, val2 ); | val1 != val2    |
-| ASSERT_LT ( val1, val2 ); | EXPECT_LT ( val1, val2 ); | val1 &lt; val2  |
-| ASSERT_LE ( val1, val2 ); | EXPECT_LE ( val1, val2 ); | val1 &lt;= val2 |
-| ASSERT_GT ( val1, val2 ); | EXPECT_GT ( val1, val2 ); | val1 &gt; val2  |
-| ASSERT_GE ( val1, val2 ); | EXPECT_GE ( val1, val2 ); | val1 &gt;= val2 |
+| ASSERT_LT ( val1, val2 ); | EXPECT_LT ( val1, val2 ); | val1 < val2  |
+| ASSERT_LE ( val1, val2 ); | EXPECT_LE ( val1, val2 ); | val1 <= val2 |
+| ASSERT_GT ( val1, val2 ); | EXPECT_GT ( val1, val2 ); | val1 > val2  |
+| ASSERT_GE ( val1, val2 ); | EXPECT_GE ( val1, val2 ); | val1 >= val2 |
 
 
 
