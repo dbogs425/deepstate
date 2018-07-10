@@ -1,6 +1,6 @@
 # DeepState
 
-DeepState -- an symbolic execution framework for C and C++ makes using fuzzing to test rather straightforward. Instead of writing a custom analysis, developers can simply annotate their C and C++. DeepState provides developers with a "Google Test-esque" UI, making testing with DeepState a familiar and easy process. The goal of this article is to demonstrate how one can incorporate DeepState into a typical C/C++ application.
+DeepState -- a symbolic execution framework for C and C++ makes using fuzzing to test rather straightforward. Instead of writing a custom analysis, developers can simply annotate their C and C++. DeepState provides developers with a "Google Test-esque" UI, making testing with DeepState a familiar and easy process. The goal of this article is to demonstrate how one can incorporate DeepState into a typical C/C++ application.
 
 ## Our project will have a simple architecture:
 ```
@@ -132,7 +132,7 @@ Then we add an annotation within the test to output what's being tested in case 
 
 * * * * *
 
-We must now create a CMakeLists.txt File Accompaniment Within /executable:
+We must now create a CMakeLists.txt File Accompaniment within /executable:
 ```
 cmake_minimum_required(VERSION 2.8)
 
@@ -221,4 +221,4 @@ INFO | 2018-04-17 06:01:41,908 | deepstate | Saving input to out/Distributive.cp
 ```
 This is how simple it is to integrate and execute DeepState for testing.
 
-## For more info on DeepState installation/background visit Trail of Bits' [Docs](https://github.com/trailofbits/deepstate) on Github and our [paper](https://agroce.github.io/bar18.pdf).
+## For more info on DeepState installation/background visit Trail of Bits' [Docs](https://github.com/trailofbits/deepstate) on Github and [paper](https://agroce.github.io/bar18.pdf).
