@@ -13,9 +13,9 @@ distribuive_test
 * * * * *
 
 Let's begin with cloning deepstate into the root directory (/distributive_test) with:
-
+```
 $ git clone https://github.com/trailofbits/deepstate deepstate
-
+```
 * * * * *
 
 Some changes must be made to the CMakeLists.txt file within /deepstate in order for CMake to build properly:
@@ -148,7 +148,7 @@ Now that we've covered the implementation of DeepState, let's see what happens w
 
 * * * * *
 
-Executing with DeepState
+## Executing with DeepState
 
 To compile our application with CMake we must navigate to our root directory and execute the following commands:
 ```
